@@ -6,19 +6,33 @@ Projeto em desenvolvimento de um **planner semanal** feito com **React**.
 
 ---
 
-## ✨ Funcionalidades atuais
-- Grade com **dias da semana** (Seg a Dom)
-- Coluna de **horários** de 08:00 às 18:00
-- Estrutura inicial pronta para receber **tarefas e compromissos**
+## Planner Semanal React
 
----
+Projeto em desenvolvimento de um planner semanal interativo feito com React.
+
+## ✨ Funcionalidades atuais
+
+Grade com dias da semana (Seg a Dom)
+
+Coluna de horários de 08:00 às 18:00
+
+Drag-and-drop: arraste compromissos da lista lateral para a grade
+
+Arrastar de volta: compromissos podem voltar da grade para a lista
+
+Edição inline de compromissos (duplo clique para alterar o título)
 
 ## 🚀 Próximos passos
-- Adicionar **tarefas clicáveis** na grade
-- Melhorar o **CSS** e o **layout responsivo**
-- Criar **lista de compromissos integrada**
-- Possibilidade de **salvar compromissos localmente ou no servidor**
 
+Implementar cores por categoria e blocos de múltiplas horas
+
+Melhorar o CSS e o layout responsivo
+
+Mobile-friendly: drag-and-drop com toque
+
+Integrar com backend para salvar compromissos
+
+Adicionar autenticação de usuários (opcional para portfólio)
 ---
 
 ## 🛠️ Tecnologias
