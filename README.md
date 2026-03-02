@@ -1,16 +1,47 @@
-# React + Vite
+# 🗓️ Planner Semanal React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)](https://github.com/SEU-USER/NOME-DO-REPO)
 
-Currently, two official plugins are available:
+Projeto em desenvolvimento de um **planner semanal** feito com **React**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Funcionalidades atuais
+- Grade com **dias da semana** (Seg a Dom)
+- Coluna de **horários** de 08:00 às 18:00
+- Estrutura inicial pronta para receber **tarefas e compromissos**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Próximos passos
+- Adicionar **tarefas clicáveis** na grade
+- Melhorar o **CSS** e o **layout responsivo**
+- Criar **lista de compromissos integrada**
+- Possibilidade de **salvar compromissos localmente ou no servidor**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tecnologias
+- React
+- JavaScript
+- CSS (planejado para depois)
+- HTML
+
+---
+
+## 💻 Como rodar localmente
+1. Clone o repositório
+   
+2. Instale as dependências:
+
+  npm install
+
+3. Rode o projeto:
+
+npm start
+
+4. Abra o navegador em http://localhost:3000
+
+## Status do Projeto
+
+⚠️ Em desenvolvimento — apenas a estrutura inicial da grade está pronta.
