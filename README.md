@@ -1,61 +1,127 @@
 # 🗓️ Planner Semanal React
 
-[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)](https://github.com/SEU-USER/NOME-DO-REPO)
+[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)]()
 
-Projeto em desenvolvimento de um **planner semanal** feito com **React**.
+Projeto de **Planner Semanal interativo** desenvolvido com **React**.  
+Permite organizar compromissos em uma grade semanal com sistema de **arrastar e soltar (drag-and-drop)**.
+
+O objetivo do projeto é criar uma aplicação prática de organização pessoal enquanto aplico conceitos de **React, gerenciamento de estado e manipulação de eventos no DOM**.
 
 ---
 
-## Planner Semanal React
+# ✨ Funcionalidades
 
-Projeto em desenvolvimento de um planner semanal interativo feito com React.
+✅ Grade semanal com dias **Segunda → Domingo**
 
-## ✨ Funcionalidades atuais
+✅ Coluna de horários **08:00 às 18:00**
 
-Grade com dias da semana (Seg a Dom)
+✅ Criar novos compromissos
 
-Coluna de horários de 08:00 às 18:00
+✅ **Drag and Drop**
+- arrastar compromissos da lista para a grade
+- mover entre horários
+- arrastar de volta da grade para a lista
 
-Drag-and-drop: arraste compromissos da lista lateral para a grade
+✅ **Edição rápida**
+- duplo clique para editar o título do compromisso
 
-Arrastar de volta: compromissos podem voltar da grade para a lista
+✅ **Marcar como concluído**
 
-Edição inline de compromissos (duplo clique para alterar o título)
+✅ **Excluir compromissos**
 
-## 🚀 Próximos passos
+✅ **Salvar automaticamente**
+- dados armazenados no **localStorage**
 
-Implementar cores por categoria e blocos de múltiplas horas
+✅ **Limpar planner**
+- botão para resetar toda a agenda
 
-Melhorar o CSS e o layout responsivo
+✅ **Responsivo para celular**
+- suporte a telas menores com scroll horizontal
 
-Mobile-friendly: drag-and-drop com toque
-
-Integrar com backend para salvar compromissos
-
-Adicionar autenticação de usuários (opcional para portfólio)
 ---
 
-## 🛠️ Tecnologias
+# 🖥️ Preview
+
+Estrutura do planner:
+Horários | Seg | Ter | Qua | Qui | Sex | Sab | Dom
+08:00
+09:00
+10:00
+...
+18:00
+
+
+Os compromissos podem ser arrastados entre as células da grade.
+
+---
+
+# 🛠️ Tecnologias utilizadas
+
 - React
-- JavaScript
-- CSS (planejado para depois)
-- HTML
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Vite
 
 ---
 
-## 💻 Como rodar localmente
-1. Clone o repositório
-   
-2. Instale as dependências:
+# 💾 Persistência de dados
 
-  npm install
+O projeto utiliza **localStorage** para salvar automaticamente:
 
-3. Rode o projeto:
+- compromissos criados
+- posição na grade semanal
+- observações
 
-npm start
+Assim, ao atualizar a página, os dados continuam salvos.
 
-4. Abra o navegador em http://localhost:3000
+---
 
-## Status do Projeto
+# 🚀 Como rodar o projeto
 
-⚠️ Em desenvolvimento — apenas a estrutura inicial da grade está pronta.
+Clone o repositório:
+2. Instale as dependências: npm install 
+3. Rode o projeto: npm start 
+4. Abra o navegador em http://localhost:5173 
+
+
+---
+
+# 📱 Responsividade
+
+O layout foi adaptado para dispositivos móveis:
+
+- scroll horizontal da agenda
+- elementos redimensionados para toque
+- campos ajustados para telas menores
+
+---
+
+# 🚀 Próximas melhorias
+
+- categorias com cores para compromissos
+- blocos de compromissos com múltiplas horas
+- suporte completo a **drag-and-drop no celular**
+- exportar planner
+- nova aba **controle financeiro**
+- integração com backend
+
+---
+
+# 📚 Objetivo do projeto
+
+Este projeto faz parte do meu **portfólio de desenvolvimento frontend**, com foco em:
+
+- React
+- gerenciamento de estado
+- manipulação de eventos
+- construção de interfaces interativas
+
+---
+
+# 👩‍💻 Autora
+
+Desenvolvido por **Ana Carolina**
+
+GitHub:  
+https://github.com/carolwarzynski

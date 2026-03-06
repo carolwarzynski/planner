@@ -138,4 +138,65 @@ button:hover {
   padding: 5px;
   font-family: 'Consolas', monospace;
   resize: none;
+
+  
+}
+
+/* RESPONSIVIDADE CELULAR */
+
+@media (max-width: 768px) {
+
+  .planner-container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .grade-container {
+    overflow-x: auto;
+  }
+
+  .dia-coluna {
+    min-width: 120px;
+  }
+
+  .horarios-coluna {
+    min-width: 70px;
+  }
+
+  .horario-celula {
+    font-size: 12px;
+  }
+
+  .dia-cabecalho {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .celula-grade {
+    min-height: 60px;
+  }
+
+  .bloco-compromisso {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  .lista-compromissos {
+    margin-top: 20px;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 100px;
+  }
+
+  .btn-limpar {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
 }
