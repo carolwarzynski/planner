@@ -1,6 +1,6 @@
 /* App.css */
 
-
+/* Reset e fonte */
 * {
   margin: 0;
   padding: 0;
@@ -8,31 +8,61 @@
   font-family: 'Consolas', monospace;
 }
 
-/* Fundo da tela */
 body, html, #root {
   height: 100%;
-  background-color: #0a0a0a; /* fundo escuro */
+  background-color: #0a0a0a; /* fundo preto */
   color: #00ffff; /* texto ciano */
 }
 
-/* Container principal */
+/* ========================= */
+/* APP - cabeçalho de abas */
+/* ========================= */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.app-header {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.app-header button {
+  padding: 8px 20px;
+  border: 1px solid #00ffff;
+  background: none;
+  color: #00ffff;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.app-header button.active,
+.app-header button:hover {
+  background-color: #00ffff;
+  color: #0a0a0a;
+}
+
+/* ========================= */
+/* PLANNER */
+/* ========================= */
 .planner-container {
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  height: 100%;
-  text-align: center; 
+  align-items: center;
+  width: 100%;
 }
 
-/* Grade de compromissos + lista */
 .grade-container {
   display: flex;
-  flex: 1;
   gap: 10px;
   overflow-x: auto;
+  margin-top: 20px;
 }
 
-/* Coluna de horários */
 .horarios-coluna {
   display: flex;
   flex-direction: column;
@@ -48,7 +78,6 @@ body, html, #root {
   font-size: 12px;
 }
 
-/* Colunas de dias */
 .dia-coluna {
   display: flex;
   flex-direction: column;
@@ -64,7 +93,6 @@ body, html, #root {
   font-weight: bold;
 }
 
-/* Células da grade */
 .celula-grade {
   height: 40px;
   border: 1px solid #00ffff;
@@ -74,7 +102,6 @@ body, html, #root {
   position: relative;
 }
 
-/* Lista lateral de compromissos */
 .lista-compromissos {
   min-width: 200px;
   padding: 10px;
@@ -84,12 +111,11 @@ body, html, #root {
   gap: 5px;
 }
 
-/* Bloco de compromisso */
 .bloco-compromisso {
   padding: 5px;
   border-radius: 4px;
   background-color: #003333; /* fundo escuro ciano */
-  color: #00ffff; /* texto ciano */
+  color: #00ffff;
   cursor: grab;
   display: flex;
   flex-direction: column;
@@ -107,7 +133,6 @@ body, html, #root {
   gap: 3px;
 }
 
-/* Botões */
 button {
   background: none;
   border: 1px solid #00ffff;
@@ -120,13 +145,13 @@ button {
 
 button:hover {
   background-color: #00ffff;
-  color: #0a0a0a; /* fundo escuro ao clicar */
+  color: #0a0a0a;
 }
 
-/* Observações */
 .observacoes-container {
   margin-top: 10px;
-  flex-shrink: 0;
+  width: 100%;
+  max-width: 800px;
 }
 
 .observacoes-container textarea {
@@ -138,180 +163,108 @@ button:hover {
   padding: 5px;
   font-family: 'Consolas', monospace;
   resize: none;
-
-  
-}
-
-/* RESPONSIVIDADE CELULAR */
-
-@media (max-width: 768px) {
-
-  .planner-container {
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 22px;
-    text-align: center;
-  }
-
-  .grade-container {
-    overflow-x: auto;
-  }
-
-  .dia-coluna {
-    min-width: 120px;
-  }
-
-  .horarios-coluna {
-    min-width: 70px;
-  }
-
-  .horario-celula {
-    font-size: 12px;
-  }
-
-  .dia-cabecalho {
-    font-size: 14px;
-    padding: 6px;
-  }
-
-  .celula-grade {
-    min-height: 60px;
-  }
-
-  .bloco-compromisso {
-    font-size: 12px;
-    padding: 4px;
-  }
-
-  .lista-compromissos {
-    margin-top: 20px;
-  }
-
-  textarea {
-    width: 100%;
-    min-height: 100px;
-  }
-
-  .btn-limpar {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-
 }
 
 /* ========================= */
 /* FINANCEIRO */
 /* ========================= */
-
-.financeiro{
-  .financeiro{
-  background:#000;
-  color:#00ffff;
-  min-height:100vh;
-  width:100%;
-  padding:40px;
-  box-sizing:border-box;
-}
+.financeiro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
-.financeiro h1{
-  font-size:40px;
-  margin-bottom:10px;
+.financeiro-container h1, .financeiro-container h2 {
+  margin-bottom: 20px;
 }
 
-.financeiro h2{
-  margin-bottom:30px;
+.colunas-container {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
 }
 
-/* inputs */
-
-.financeiro input{
-  width:250px;
-  margin:6px;
-  padding:10px;
-  background:#000;
-  border:1px solid #00ffff;
-  color:#00ffff;
+.coluna-registros, .coluna-fixos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* botões */
-
-.financeiro button{
-  margin:10px;
-  padding:10px 20px;
-  background:#000;
-  border:1px solid #00ffff;
-  color:#00ffff;
-  cursor:pointer;
-  transition:0.2s;
+.registros-card, .despesas-fixas-card {
+  border: 1px solid #00ffff;
+  padding: 20px;
+  background-color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 300px;
 }
 
-.financeiro button:hover{
-  background:#00ffff;
-  color:#000;
+.registros-card h3, .despesas-fixas-card h3 {
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-/* cards resumo */
-
-.resumo-financeiro{
-  display:flex;
-  gap:20px;
-  margin:30px 0;
+.registros-card input, .despesas-fixas-card input {
+  padding: 8px;
+  background: #0a0a0a;
+  border: 1px solid #00ffff;
+  color: #00ffff;
 }
 
-.card{
-  border:1px solid #00ffff;
-  padding:20px;
-  width:150px;
-  text-align:center;
+.botoes-registros {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
 }
 
-/* lista de transações */
-
-.lista-financeira{
-  width:450px;
-  margin-top:20px;
+.resumo-financeiro {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  justify-content: center;
 }
 
-.transacao{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  border:1px solid #00ffff;
-  padding:10px;
-  margin-top:10px;
+.card {
+  border: 1px solid #00ffff;
+  padding: 10px;
+  text-align: center;
+  min-width: 100px;
 }
 
-.transacao button{
-  border:none;
-  background:none;
-  color:#ff5555;
-  font-size:16px;
-  cursor:pointer;
+.lista-financeira {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
-.financeiro-grid{
-  display:flex;
-  gap:40px;
-  margin-top:30px;
-  align-items:flex-start;
+.transacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #00ffff;
+  padding: 5px;
 }
 
-.lista-financeira{
-  width:500px;
+.fixo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
 }
 
-.despesas-fixas{
-  width:300px;
-  border:1px solid #00ffff;
-  padding:20px;
-}
+@media (max-width: 768px) {
+  .colunas-container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
 
-.fixo-item{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-top:10px;
+  .grade-container {
+    flex-direction: column;
+  }
 }

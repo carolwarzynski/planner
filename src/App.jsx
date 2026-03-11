@@ -4,32 +4,31 @@ import Financeiro from "./components/Financeiro";
 import "./App.css";
 
 function App() {
-
-  const [abaAtiva, setAbaAtiva] = useState("planner");
+  const [aba, setAba] = useState("planner"); // planner ou financeiro
 
   return (
-
-    <div className="app">
-
-      <div className="abas">
-
-        <button onClick={() => setAbaAtiva("planner")}>
+    <div className="app-container">
+      <header className="app-header">
+        <button
+          className={aba === "planner" ? "active" : ""}
+          onClick={() => setAba("planner")}
+        >
           Planner
         </button>
-
-        <button onClick={() => setAbaAtiva("financeiro")}>
+        <button
+          className={aba === "financeiro" ? "active" : ""}
+          onClick={() => setAba("financeiro")}
+        >
           Financeiro
         </button>
+      </header>
 
-      </div>
-
-      {abaAtiva === "planner" && <Planner />}
-      {abaAtiva === "financeiro" && <Financeiro />}
-
+      <main>
+        {aba === "planner" && <Planner />}
+        {aba === "financeiro" && <Financeiro />}
+      </main>
     </div>
-
   );
-
 }
 
 export default App;
