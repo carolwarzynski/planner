@@ -21,6 +21,7 @@ O objetivo do projeto é criar uma aplicação prática de organização pessoal
 - arrastar compromissos da lista para a grade
 - mover entre horários
 - arrastar de volta da grade para a lista
+- totalmente funcional em celulares (importada biblioteca específica)
 
 ✅ **Edição rápida**
 - duplo clique para editar o título do compromisso
@@ -37,7 +38,15 @@ O objetivo do projeto é criar uma aplicação prática de organização pessoal
 
 ✅ **Responsivo para celular**
 - suporte a telas menores com scroll horizontal
+- arrastar blocos na agenda funcionando normalmente
 
+✅ **Aba Financeiro**
+
+- visualizar e gerenciar despesas e receitas
+
+- estrutura completa pronta para uso
+
+- controle de despesas fixas e variáveis 
 ---
 
 # 🖥️ Preview
@@ -101,9 +110,7 @@ O layout foi adaptado para dispositivos móveis:
 
 - categorias com cores para compromissos
 - blocos de compromissos com múltiplas horas
-- suporte completo a **drag-and-drop no celular**
 - exportar planner
-- nova aba **controle financeiro**
 - integração com backend
 
 ---
